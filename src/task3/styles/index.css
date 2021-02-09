@@ -1,0 +1,63 @@
+.folder {
+  width: 100%;
+}
+
+.folder__name {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  cursor: pointer;
+  width: min-content;
+}
+
+.folder__expanded {
+  display: flex;
+}
+
+.folder__expanded::before {
+  display: block;
+  content: "";
+  margin-left: 24px;
+  border-left: 1px solid #444;
+  margin-bottom: 18px;
+}
+
+.file {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  width: min-content;
+}
+
+.folder__name img,
+.file img {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+p {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.input-holder {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 8px;
+}
+
+input {
+  width: 200px;
+}
